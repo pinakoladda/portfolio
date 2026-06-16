@@ -1,0 +1,76 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0px 4px 28px -2px #00000014;
+  border-radius: 12px;
+  padding: 8px 8px 16px;
+  max-width: 400px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.projectImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.projectDescription {
+  margin: 4px 0 16px;
+  padding: 0 12px;
+}
+
+.header {
+  margin-bottom: 6px;
+}
+
+.paragraph {
+  margin-bottom: 12px;
+}
+
+.paragraph:last-of-type {
+  margin-bottom: 6px;
+}
+
+.header[data-color='pet_care'] {
+  color: var(--color-details-petcare);
+}
+
+.header[data-color='pet_store'] {
+  color: var(--color-details-petstore);
+}
+
+.header[data-color='real_estate'] {
+  color: var(--color-details-realestate);
+}
+
+.technologes {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+
+.btnMore {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  opacity: 1;
+  align-self: self-end;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btnMore:hover {
+  opacity: 0.3;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.btnMore:visited {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}

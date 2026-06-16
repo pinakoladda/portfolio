@@ -1,0 +1,49 @@
+.mainImgContainer {
+  position: relative;
+  max-width: 800px;
+}
+
+.imgMain {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.imgSecondary {
+  width: 94px;
+  height: 94px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+.imgSecondary[data-selected='true'] {
+  border: 3px solid #f1d092;
+}
+
+.imagesContainer {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  margin-top: 12px;
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
+}
+
+.imgArrowRight {
+  position: absolute;
+  top: 226px;
+  right: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+.imgArrowLeft {
+  position: absolute;
+  top: 226px;
+  left: 16px;
+  -webkit-tap-highlight-color: transparent;
+}

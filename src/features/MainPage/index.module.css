@@ -1,0 +1,15 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.mainInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainName {
+  margin: 16px 0 0;
+}
