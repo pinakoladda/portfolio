@@ -1,0 +1,15 @@
+.experience {
+  border-left: 3px solid #000;
+  padding-left: 18px;
+}
+
+.sectionCourse {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+/* .sectionCourse:first-of-type {
+  margin-top: 12px;
+} */

@@ -3,6 +3,10 @@
   padding-left: 18px;
 }
 
+.heading {
+  margin: 0;
+}
+
 .paragraph {
   margin: 12px 0 0;
 }

@@ -13,3 +13,13 @@
   display: flex;
   gap: 18px;
 }
+
+.title[data-color='pet-care'] {
+  color: var(--color-details-petcare);
+}
+.title[data-color='pet-store'] {
+  color: var(--color-details-petcare);
+}
+.title[data-color='real-estate'] {
+  color: var(--color-details-petcare);
+}

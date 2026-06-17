@@ -6,7 +6,8 @@ interface ProjectCardProps {
   img: string
   name: string
   description: string
-  technologes: string[]
+  technologies: string[]
+  path: string
 }
 
 export const ProjectCard = ({
@@ -14,7 +15,8 @@ export const ProjectCard = ({
   img,
   name,
   description,
-  technologes,
+  technologies,
+  path,
 }: ProjectCardProps) => {
   return (
     <div className={styles.project}>
@@ -48,8 +50,8 @@ export const ProjectCard = ({
           >
             Technologies used in the project:
           </Typography>
-          <ul className={styles.technologes}>
-            {technologes.map((technology) => {
+          <ul className={styles.technologies}>
+            {technologies.map((technology) => {
               return (
                 <Typography
                   key={technology}
@@ -65,7 +67,7 @@ export const ProjectCard = ({
           </ul>
         </section>
       </div>
-      <a href="/project-pet-care" className={styles.btnMore}>
+      <a href={path} className={styles.btnMore} data-color={id}>
         View more about {name} →
       </a>
     </div>

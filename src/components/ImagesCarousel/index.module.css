@@ -1,18 +1,19 @@
 .mainImgContainer {
   position: relative;
-  max-width: 800px;
+  max-width: 840px;
+  max-height: 480px;
 }
 
 .imgMain {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
 
 .imgSecondary {
-  width: 94px;
-  height: 94px;
+  width: 60px;
+  height: 60px;
   border-radius: 6px;
   object-fit: cover;
   box-sizing: border-box;
@@ -20,30 +21,30 @@
 }
 
 .imgSecondary[data-selected='true'] {
-  border: 3px solid #f1d092;
+  border: 3px solid var(--color-details-petcare);
 }
 
 .imagesContainer {
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   display: flex;
   gap: 12px;
   flex-wrap: nowrap;
   overflow: scroll;
-  margin-top: 12px;
+  margin-top: 6px;
   box-sizing: border-box;
   scroll-snap-type: x mandatory;
 }
 
 .imgArrowRight {
   position: absolute;
-  top: 226px;
+  top: 45%;
   right: 16px;
   -webkit-tap-highlight-color: transparent;
 }
 .imgArrowLeft {
   position: absolute;
-  top: 226px;
+  top: 45%;
   left: 16px;
   -webkit-tap-highlight-color: transparent;
 }

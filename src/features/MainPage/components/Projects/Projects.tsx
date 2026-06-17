@@ -6,8 +6,8 @@ import { Typography } from '../../../../shared/components/Typography'
 export const Projects = () => {
   return (
     <section className={styles.projects}>
-      <Typography as="header" variant="heading2" weight="medium">
-        My Projects:
+      <Typography as="h3" variant="heading3" weight="medium">
+        My Projects
       </Typography>
       <div className={styles.projectsContainer}>
         {PROJECTS.map((project) => {
@@ -18,7 +18,8 @@ export const Projects = () => {
               name={project.name}
               description={project.description}
               img={project.image}
-              technologes={project.technologes}
+              technologies={project.technologies}
+              path={project.path}
             />
           )
         })}

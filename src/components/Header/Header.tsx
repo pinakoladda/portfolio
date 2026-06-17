@@ -1,11 +1,23 @@
 import { Typography } from '../../shared/components/Typography'
 import styles from './index.module.css'
 
-export const Header = () => {
+interface HeaderProps {
+  page: 'main' | 'pet-care' | 'pet-store' | 'real-estate'
+}
+
+export const Header = ({ page }: HeaderProps) => {
   return (
     <header className={styles.header}>
-      <Typography variant="heading2" weight="medium">
-        Portfolio
+      <Typography
+        className={styles.title}
+        variant="heading2"
+        weight="medium"
+        data-color={page}
+      >
+        {page === 'main' && 'Portfolio'}
+        {page === 'pet-care' && 'Pet-Care Project'}
+        {page === 'pet-store' && 'Pet-Store Project'}
+        {page === 'real-estate' && 'Real Estate Landing Project'}
       </Typography>
       <div className={styles.linkContainer}>
         <span>About Me</span>

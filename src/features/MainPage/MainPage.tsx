@@ -2,6 +2,7 @@ import { Header } from '../../components/Header'
 import { Typography } from '../../shared/components/Typography'
 import { About } from './components/About'
 import { Avatar } from './components/Avatar'
+import { Experience } from './components/Experience'
 import { Projects } from './components/Projects'
 
 import styles from './index.module.css'
@@ -9,7 +10,7 @@ import styles from './index.module.css'
 export const MainPage = () => {
   return (
     <main className={styles.mainPage}>
-      <Header />
+      <Header page="main" />
       <section className={styles.mainInfoContainer}>
         <Avatar />
         <Typography
@@ -25,6 +26,7 @@ export const MainPage = () => {
       </section>
       <About />
       <Projects />
+      <Experience />
     </main>
   )
 }

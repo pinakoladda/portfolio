@@ -46,7 +46,7 @@
   color: var(--color-details-realestate);
 }
 
-.technologes {
+.technologies {
   padding: 0 0 0 18px;
   margin: 0;
 }
@@ -63,10 +63,24 @@
   font-style: italic;
   font-weight: 500;
   text-decoration: none;
+  color: #000;
+}
+
+.btnMore[data-color='pet_care']:hover {
+  transition: color 0.2s ease-in-out;
+  color: var(--color-details-petcare);
+}
+.btnMore[data-color='pet_store']:hover {
+  transition: color 0.2s ease-in-out;
+  color: var(--color-details-petstore);
+}
+.btnMore[data-color='real_estate']:hover {
+  transition: color 0.2s ease-in-out;
+  color: var(--color-details-realestate);
 }
 
 .btnMore:hover {
-  opacity: 0.3;
+  opacity: 0.8;
   transition: opacity 0.2s ease-in-out;
 }
 
