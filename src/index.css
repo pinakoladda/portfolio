@@ -15,12 +15,16 @@ html {
   --color-details-petcare: #6d4886;
   --color-details-petstore: #003459;
   --color-details-realestate: #d9a989;
-  --color-surface: #5f181814;
+
+  /* --color-surface: #5f181814; */
+  --color-surface: #4c186614;
+
+  --color-accent: #a0b3bb;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
-  padding: 20px 80px;
 }
 
 h1,

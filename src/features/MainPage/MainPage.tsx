@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer'
 import { Header } from '../../components/Header'
 import { Typography } from '../../shared/components/Typography'
 import { About } from './components/About'
@@ -9,24 +10,34 @@ import styles from './index.module.css'
 
 export const MainPage = () => {
   return (
-    <main className={styles.mainPage}>
-      <Header page="main" />
-      <section className={styles.mainInfoContainer}>
-        <Avatar />
-        <Typography
-          className={styles.mainName}
-          variant="heading3"
-          weight="medium"
-        >
-          Junior Frontend Developer
-        </Typography>
-        <Typography variant="body1" weight="medium">
-          Based in Warsaw
-        </Typography>
-      </section>
-      <About />
-      <Projects />
-      <Experience />
-    </main>
+    <>
+      <main className={styles.mainPage} id="MainPage">
+        <Header page="main" />
+        <section className={styles.mainInfoContainer}>
+          <Avatar />
+          <Typography
+            className={styles.mainName}
+            variant="heading3"
+            weight="semi-bold"
+          >
+            Nina Koliada
+          </Typography>
+          <Typography
+            className={styles.mainProfession}
+            variant="heading3"
+            weight="medium"
+          >
+            Junior Frontend Developer
+          </Typography>
+          <Typography variant="body1" weight="medium">
+            Based in Warsaw
+          </Typography>
+        </section>
+        <About />
+        <Projects />
+        <Experience />
+      </main>
+      <Footer page="main" />
+    </>
   )
 }

@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  opacity: 1;
+  color: #000;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}

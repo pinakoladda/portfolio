@@ -2,12 +2,14 @@ import React from 'react'
 import styles from './index.module.css'
 import { ArrowRightFilledIcon } from '../../shared/images/ArrowRightFilledIcon'
 import { ArrowLeftFilledIcon } from '../../shared/images/ArrowLeftFilledIcon'
+import cn from 'classnames'
 
 interface ImagesCarouselProps {
   images: string[]
+  className?: string
 }
 
-export const ImagesCarousel = ({ images }: ImagesCarouselProps) => {
+export const ImagesCarousel = ({ images, className }: ImagesCarouselProps) => {
   const [currentImgIndex, setCurrentImgIndex] = React.useState(0)
 
   const photosRef = React.useRef<HTMLDivElement>(null)
@@ -42,7 +44,7 @@ export const ImagesCarousel = ({ images }: ImagesCarouselProps) => {
   }, [currentImgIndex])
 
   return (
-    <section className={styles.carousel}>
+    <section className={cn(styles.carousel, className)}>
       <div className={styles.mainImgContainer}>
         <img
           className={styles.imgMain}

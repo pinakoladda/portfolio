@@ -3,8 +3,13 @@ import styles from './index.module.css'
 
 export const About = () => {
   return (
-    <section className={styles.aboutMe}>
-      <Typography as="h3" variant="heading3" weight="medium">
+    <section className={styles.aboutMe} id="AboutMe">
+      <Typography
+        className={styles.heading}
+        as="h3"
+        variant="heading3"
+        weight="medium"
+      >
         About me
       </Typography>
       <Typography className={styles.paragraph} variant="body1" weight="regular">

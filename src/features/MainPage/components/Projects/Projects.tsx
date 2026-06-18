@@ -5,7 +5,7 @@ import { Typography } from '../../../../shared/components/Typography'
 
 export const Projects = () => {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="Projects">
       <Typography as="h3" variant="heading3" weight="medium">
         My Projects
       </Typography>

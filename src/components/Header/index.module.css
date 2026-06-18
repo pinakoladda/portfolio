@@ -18,8 +18,8 @@
   color: var(--color-details-petcare);
 }
 .title[data-color='pet-store'] {
-  color: var(--color-details-petcare);
+  color: var(--color-details-petstore);
 }
 .title[data-color='real-estate'] {
-  color: var(--color-details-petcare);
+  color: var(--color-details-realestate);
 }

@@ -24,7 +24,7 @@ export const ProjectCard = ({
         <img
           className={styles.projectImg}
           src={img}
-          alt="screenshot of pet-care project, main page"
+          alt="screenshot of pet-care project"
         />
         <section className={styles.projectDescription}>
           <Typography

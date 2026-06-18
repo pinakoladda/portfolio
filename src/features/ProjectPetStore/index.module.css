@@ -1,0 +1,58 @@
+.main {
+  padding: 20px 80px;
+}
+
+.aboutProject {
+  border-left: 3px solid #000;
+  padding-left: 18px;
+  margin-top: 60px;
+}
+
+.heading {
+  margin-bottom: 12px;
+}
+
+.features {
+  margin-top: 60px;
+}
+
+.featuresContainer {
+  margin-top: 18px;
+}
+
+.featuresContainer:first-of-type {
+  margin: 0;
+}
+
+.listItem {
+  list-style: inside;
+  margin-top: 8px;
+}
+
+.list {
+  padding: 0;
+}
+
+.carouselContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 413px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.linkContainer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 8px;
+}

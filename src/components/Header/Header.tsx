@@ -1,8 +1,9 @@
 import { Typography } from '../../shared/components/Typography'
+import { Link } from '../Link'
 import styles from './index.module.css'
 
 interface HeaderProps {
-  page: 'main' | 'pet-care' | 'pet-store' | 'real-estate'
+  page: 'main' | 'pet-care' | 'pet-store' | 'real-estate' | 'contacts'
 }
 
 export const Header = ({ page }: HeaderProps) => {
@@ -15,17 +16,49 @@ export const Header = ({ page }: HeaderProps) => {
         data-color={page}
       >
         {page === 'main' && 'Portfolio'}
+        {page === 'contacts' && 'Contacts'}
+
         {page === 'pet-care' && 'Pet-Care Project'}
         {page === 'pet-store' && 'Pet-Store Project'}
         {page === 'real-estate' && 'Real Estate Landing Project'}
       </Typography>
-      <div className={styles.linkContainer}>
-        <span>About Me</span>
-        <span>Projects</span>
-        <span>Contacts</span>
-        <span>LinkedIn</span>
-        <span>GitHub</span>
-      </div>
+      {page === 'main' ? (
+        <div className={styles.linkContainer}>
+          <Link href="#AboutMe">
+            <Typography variant="body3" weight="medium">
+              About Me
+            </Typography>
+          </Link>
+          <Link href="#Projects">
+            <Typography variant="body3" weight="medium">
+              Projects
+            </Typography>
+          </Link>
+          <Link href="/contacts">
+            <Typography variant="body3" weight="medium">
+              Contacts
+            </Typography>
+          </Link>
+        </div>
+      ) : (
+        <div className={styles.linkContainer}>
+          <Link href="/">
+            <Typography variant="body3" weight="medium">
+              Main Page
+            </Typography>
+          </Link>
+          <Link href="/contacts">
+            <Typography variant="body3" weight="medium">
+              Contacts
+            </Typography>
+          </Link>
+          <Link href="/#Projects">
+            <Typography variant="body3" weight="medium">
+              Projects
+            </Typography>
+          </Link>
+        </div>
+      )}
     </header>
   )
 }
