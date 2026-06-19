@@ -1,6 +1,13 @@
 .projectsContainer {
-  margin-top: 32px;
+  margin-top: 18px;
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 620px) {
+  .projectsContainer {
+    margin-top: 8px;
+  }
 }

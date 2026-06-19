@@ -78,3 +78,79 @@
   align-items: center;
   gap: 8px;
 }
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 20px 32px;
+  }
+  .aboutProject {
+    padding-left: 8px;
+    margin-top: 24px;
+  }
+
+  .technologies {
+    margin-top: 24px;
+  }
+
+  .features {
+    margin-top: 24px;
+  }
+
+  .experience {
+    padding: 12px 8px;
+    margin-top: 24px;
+  }
+
+  .heading {
+    margin-bottom: 6px;
+  }
+
+  .featuresContainer {
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .carouselContainer {
+    margin-top: 18px;
+  }
+
+  .linkContainer {
+    margin-top: 24px;
+  }
+
+  .list {
+    gap: 2px;
+  }
+  .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main {
+    padding: 12px;
+  }
+
+  .technologiesList {
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding-left: 8px;
+  }
+
+  .experience {
+    border: unset;
+    margin: 24px -12px;
+    border-radius: unset;
+  }
+
+  .linkContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .carousel {
+    width: 90vw;
+  }
+}

@@ -1,5 +1,7 @@
+import { useMediaQuery } from '@uidotdev/usehooks'
 import { Typography } from '../../../../../../shared/components/Typography'
 import styles from './index.module.css'
+import { Link } from '../../../../../../components/Link'
 
 interface ProjectCardProps {
   id: string
@@ -18,6 +20,8 @@ export const ProjectCard = ({
   technologies,
   path,
 }: ProjectCardProps) => {
+  const isSmallDevice = useMediaQuery('only screen and (max-width : 620px)')
+
   return (
     <div className={styles.project}>
       <div className={styles.containerAbout}>
@@ -27,23 +31,25 @@ export const ProjectCard = ({
           alt="screenshot of pet-care project"
         />
         <section className={styles.projectDescription}>
+          <Link href={path}>
+            <Typography
+              variant={isSmallDevice ? 'body1' : 'heading4'}
+              weight="semi-bold"
+              className={styles.header}
+              data-color={id}
+            >
+              {name}
+            </Typography>
+          </Link>
           <Typography
-            variant="heading4"
-            weight="medium"
-            className={styles.header}
-            data-color={id}
-          >
-            {name}
-          </Typography>
-          <Typography
-            variant="body2"
+            variant={isSmallDevice ? 'body5' : 'body2'}
             weight="regular"
             className={styles.paragraph}
           >
             {description}
           </Typography>
           <Typography
-            variant="body2"
+            variant={isSmallDevice ? 'body4' : 'body2'}
             weight="regular"
             style="italic"
             className={styles.paragraph}
@@ -56,7 +62,7 @@ export const ProjectCard = ({
                 <Typography
                   key={technology}
                   as="li"
-                  variant="body2"
+                  variant={isSmallDevice ? 'body5' : 'body2'}
                   weight="regular"
                   style="italic"
                 >

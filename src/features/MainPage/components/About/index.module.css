@@ -14,3 +14,12 @@
 .paragraph {
   margin: 12px 0 0;
 }
+
+@media screen and (max-width: 620px) {
+  .aboutMe {
+    padding-left: 8px;
+  }
+  .paragraph {
+    margin: 6px 0 0;
+  }
+}

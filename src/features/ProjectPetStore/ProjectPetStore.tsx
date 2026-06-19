@@ -26,6 +26,7 @@ import { Footer } from '../../components/Footer'
 import { GitHubIcon } from '../../shared/images/GitHubIcon'
 import { Link } from '../../components/Link'
 import { CursorFilledIcon } from '../../shared/images/CursorFilledIcon'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 const technologies = [
   'TypeScript',
@@ -63,6 +64,8 @@ const sectionPagesDesktopImages = [
 ]
 
 export const ProjectPetStore = () => {
+  const isSmallDevice = useMediaQuery('only screen and (max-width : 700px)')
+
   return (
     <>
       <main className={styles.main}>
@@ -71,12 +74,15 @@ export const ProjectPetStore = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Project Overview
           </Typography>
-          <Typography variant="body1" weight="regular">
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body1'}
+            weight="regular"
+          >
             This project was developed based on a Figma design mockup, with a
             strong focus on accurately translating the design into a fully
             functional user interface.
@@ -86,7 +92,7 @@ export const ProjectPetStore = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Technologies used in this project:
@@ -97,7 +103,7 @@ export const ProjectPetStore = () => {
                 <Typography
                   as="li"
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   style="italic"
                   key={item}
@@ -112,12 +118,15 @@ export const ProjectPetStore = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Challenges
           </Typography>
-          <Typography variant="body1" weight="regular">
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body1'}
+            weight="regular"
+          >
             My main goal was to achieve a pixel-perfect implementation that
             closely matched the original Figma design. One challenge was that
             the mockup included only two screen sizes, so I had to design and
@@ -131,14 +140,14 @@ export const ProjectPetStore = () => {
             <Typography
               className={styles.list}
               as="ul"
-              variant="heading3"
+              variant={isSmallDevice ? 'body1' : 'heading3'}
               weight="medium"
             >
               The application consists of three pages:
               <Typography
                 className={styles.listItem}
                 as="li"
-                variant="body1"
+                variant={isSmallDevice ? 'body4' : 'body1'}
                 weight="regular"
               >
                 Main Page
@@ -146,7 +155,7 @@ export const ProjectPetStore = () => {
               <Typography
                 className={styles.listItem}
                 as="li"
-                variant="body1"
+                variant={isSmallDevice ? 'body4' : 'body1'}
                 weight="regular"
               >
                 Category Page
@@ -154,7 +163,7 @@ export const ProjectPetStore = () => {
               <Typography
                 className={styles.listItem}
                 as="li"
-                variant="body1"
+                variant={isSmallDevice ? 'body4' : 'body1'}
                 weight="regular"
               >
                 Product Page
@@ -169,7 +178,7 @@ export const ProjectPetStore = () => {
               <Typography
                 className={styles.heading}
                 as="h3"
-                variant="heading3"
+                variant={isSmallDevice ? 'body1' : 'heading3'}
                 weight="medium"
               >
                 Key Features Implemented
@@ -178,14 +187,14 @@ export const ProjectPetStore = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   1. Pixel-Perfect Development.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -198,14 +207,14 @@ export const ProjectPetStore = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   2. Semantic & Maintainable Code.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -214,7 +223,7 @@ export const ProjectPetStore = () => {
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -224,7 +233,7 @@ export const ProjectPetStore = () => {
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -233,19 +242,27 @@ export const ProjectPetStore = () => {
                   application.
                 </Typography>
               </div>
+              {isSmallDevice && (
+                <div className={styles.carouselContainer}>
+                  <ImagesCarousel
+                    className={styles.carousel}
+                    images={sectionPagesMobileImages}
+                  />
+                </div>
+              )}
               <div className={styles.featuresContainer}>
                 <div>
                   <Typography
                     className={styles.list}
                     as="h4"
-                    variant="heading4"
+                    variant={isSmallDevice ? 'body2' : 'heading4'}
                     weight="medium"
                   >
                     3. Responsive User Experience.
                   </Typography>
                   <Typography
                     className={styles.listItem}
-                    variant="body2"
+                    variant={isSmallDevice ? 'body4' : 'body2'}
                     weight="regular"
                     as="li"
                   >
@@ -255,7 +272,7 @@ export const ProjectPetStore = () => {
                   </Typography>
                   <Typography
                     className={styles.listItem}
-                    variant="body2"
+                    variant={isSmallDevice ? 'body4' : 'body2'}
                     weight="regular"
                     as="li"
                   >
@@ -269,14 +286,14 @@ export const ProjectPetStore = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   4. Interactive UI Elements.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -288,14 +305,14 @@ export const ProjectPetStore = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   5. Navigation.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -305,12 +322,14 @@ export const ProjectPetStore = () => {
                 </Typography>
               </div>
             </div>
-            <div className={styles.carouselContainer}>
-              <ImagesCarousel
-                className={styles.carousel}
-                images={sectionPagesMobileImages}
-              />
-            </div>
+            {!isSmallDevice && (
+              <div className={styles.carouselContainer}>
+                <ImagesCarousel
+                  className={styles.carousel}
+                  images={sectionPagesMobileImages}
+                />
+              </div>
+            )}
           </div>
 
           <div className={styles.carouselContainer}>
@@ -321,12 +340,15 @@ export const ProjectPetStore = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Lessons Learned
           </Typography>
-          <Typography variant="body1" weight="regular">
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body1'}
+            weight="regular"
+          >
             This project improved my understanding of responsive design and
             strengthened my attention to detail. It also showed me that frontend
             development often requires making design decisions beyond what is
@@ -339,7 +361,10 @@ export const ProjectPetStore = () => {
         <section className={styles.linkContainer}>
           <GitHubIcon />
           <Link className={styles.link} href="https://github.com/pinakoladda">
-            <Typography variant="body1" weight="regular">
+            <Typography
+              variant={isSmallDevice ? 'body4' : 'body1'}
+              weight="regular"
+            >
               View code on GitHub
             </Typography>
           </Link>

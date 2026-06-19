@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 /* .link {
   color: #000;
   text-decoration: unset;
@@ -22,4 +21,10 @@
 }
 .title[data-color='real-estate'] {
   color: var(--color-details-realestate);
+}
+
+@media screen and (max-width: 620px) {
+  .linkContainer {
+    gap: 12px;
+  }
 }

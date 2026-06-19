@@ -88,3 +88,18 @@
   text-decoration: none;
   color: var(--text-color-primary);
 }
+
+@media screen and (max-width: 620px) {
+  .project {
+    box-shadow: 0px 4px 28px -2px #00000063;
+    padding: 8px 6px;
+  }
+
+  .projectDescription {
+    margin: 0;
+    padding: 0 6px;
+  }
+  .btnMore {
+    font-size: 14px;
+  }
+}

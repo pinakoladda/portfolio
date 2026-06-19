@@ -16,6 +16,7 @@ import { GitHubIcon } from '../../shared/images/GitHubIcon'
 import { Link } from '../../components/Link'
 import { CursorFilledIcon } from '../../shared/images/CursorFilledIcon'
 import { Footer } from '../../components/Footer'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 const projectImagesMobile = [
   realestate1Mobile,
@@ -40,6 +41,8 @@ const technologies = [
 ]
 
 export const ProjectRealEstate = () => {
+  const isSmallDevice = useMediaQuery('only screen and (max-width : 700px)')
+
   return (
     <>
       <main className={styles.main}>
@@ -48,12 +51,15 @@ export const ProjectRealEstate = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Project Overview
           </Typography>
-          <Typography variant="body1" weight="regular">
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body1'}
+            weight="regular"
+          >
             This project was developed based on a Figma design mockup, with a
             strong focus on accurately translating the design into a fully
             functional user interface.
@@ -64,7 +70,11 @@ export const ProjectRealEstate = () => {
             <ImagesCarousel images={projectImagesDesktop} />
           </div>
           <div className={styles.technologiesTextContainer}>
-            <Typography as="h3" variant="heading3" weight="medium">
+            <Typography
+              as="h3"
+              variant={isSmallDevice ? 'body1' : 'heading3'}
+              weight="medium"
+            >
               Technologies used in project:
             </Typography>
             <ul className={styles.technologiesList}>
@@ -73,7 +83,7 @@ export const ProjectRealEstate = () => {
                   <Typography
                     as="li"
                     className={styles.listItem}
-                    variant="body2"
+                    variant={isSmallDevice ? 'body4' : 'body2'}
                     weight="regular"
                     style="italic"
                     key={item}
@@ -90,12 +100,15 @@ export const ProjectRealEstate = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Challenges
           </Typography>
-          <Typography variant="body1" weight="regular">
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body1'}
+            weight="regular"
+          >
             This project was primarily focused on improving my CSS skills and
             practicing pixel-perfect implementation. Since I created the design
             mockup myself using AI tools before building it in Figma, there were
@@ -109,7 +122,7 @@ export const ProjectRealEstate = () => {
               <Typography
                 className={styles.heading}
                 as="h3"
-                variant="heading3"
+                variant={isSmallDevice ? 'body1' : 'heading3'}
                 weight="medium"
               >
                 Key Features Implemented
@@ -118,14 +131,14 @@ export const ProjectRealEstate = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   1. Pixel-Perfect Development.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -137,14 +150,14 @@ export const ProjectRealEstate = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   2. Semantic & Maintainable Code.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -153,7 +166,7 @@ export const ProjectRealEstate = () => {
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -165,14 +178,14 @@ export const ProjectRealEstate = () => {
                 <Typography
                   className={styles.list}
                   as="h4"
-                  variant="heading4"
+                  variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
                   3. Responsive User Experience.
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -181,7 +194,7 @@ export const ProjectRealEstate = () => {
                 </Typography>
                 <Typography
                   className={styles.listItem}
-                  variant="body2"
+                  variant={isSmallDevice ? 'body4' : 'body2'}
                   weight="regular"
                   as="li"
                 >
@@ -197,7 +210,10 @@ export const ProjectRealEstate = () => {
                 className={styles.link}
                 href="https://github.com/pinakoladda"
               >
-                <Typography variant="body1" weight="regular">
+                <Typography
+                  variant={isSmallDevice ? 'body4' : 'body1'}
+                  weight="regular"
+                >
                   View code on GitHub
                 </Typography>
               </Link>
@@ -215,12 +231,15 @@ export const ProjectRealEstate = () => {
           <Typography
             className={styles.heading}
             as="h3"
-            variant="heading3"
+            variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
             Lessons Learned
           </Typography>
-          <Typography variant="body1" weight="regular">
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body1'}
+            weight="regular"
+          >
             This project provided valuable hands-on experience with CSS and
             responsive layouts. It also reinforced the importance of attention
             to detail when translating a design into code and gave me experience

@@ -18,3 +18,13 @@
 .mainProfession {
   margin-top: 6px;
 }
+
+@media screen and (max-width: 620px) {
+  .mainPage {
+    padding: 12px;
+    gap: 30px;
+  }
+  .mainName {
+    margin: 0;
+  }
+}

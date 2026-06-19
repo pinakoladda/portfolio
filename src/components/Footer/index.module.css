@@ -30,3 +30,33 @@
   gap: 8px;
   color: var(--text-color-secondary);
 }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    margin-top: 32px;
+    padding: 24px 60px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footer {
+    margin-top: 24px;
+    padding: 24px;
+  }
+  .sectionContacts {
+    gap: 6px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    margin-top: 18px;
+  }
+  .sectionContacts {
+    border-left: unset;
+    padding-left: 0;
+  }
+  .link {
+    gap: unset;
+  }
+}

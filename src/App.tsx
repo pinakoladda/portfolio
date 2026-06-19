@@ -1,15 +1,22 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { MainPage } from './features/MainPage'
 import { ProjectPetCare } from './features/ProjectPetCare'
-import { Contacts } from './features/Contacts'
 import { ProjectPetStore } from './features/ProjectPetStore'
 import { ProjectRealEstate } from './features/ProjectRealEstate'
+import { ProjectsPage } from './features/ProjectsPage'
+import { ContactsPage } from './features/ContactsPage'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/contacts" element={<ContactsPage />} />
+      </Routes>
+      <Routes>
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
       <Routes>
         <Route path="/project-pet-care" element={<ProjectPetCare />} />
@@ -19,9 +26,6 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/project-real-estate" element={<ProjectRealEstate />} />
-      </Routes>
-      <Routes>
-        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </BrowserRouter>
   )

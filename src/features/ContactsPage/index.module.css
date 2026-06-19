@@ -23,3 +23,21 @@
   display: flex;
   gap: 18px;
 }
+
+@media screen and (max-width: 620px) {
+  .contactsPage {
+    padding: 12px;
+  }
+
+  .heading {
+    margin: 24px 0;
+  }
+
+  .link {
+    align-items: center;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+}
