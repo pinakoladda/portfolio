@@ -27,6 +27,16 @@ import { GitHubIcon } from '../../shared/images/GitHubIcon'
 import { Link } from '../../components/Link'
 import { CursorFilledIcon } from '../../shared/images/CursorFilledIcon'
 
+const technologies = [
+  'TypeScript',
+  'Pixel Perfect',
+  'Adaptive Design',
+  'Semantic Markup',
+  'Interactive Components',
+  'React Router',
+  'Reusable React Components',
+]
+
 const sectionPagesImages = [
   petstoreMainBannerLImg,
   petstoreCategoryBannerLImg,
@@ -72,11 +82,55 @@ export const ProjectPetStore = () => {
             functional user interface.
           </Typography>
         </section>
+        <section className={styles.technologies}>
+          <Typography
+            className={styles.heading}
+            as="h3"
+            variant="heading3"
+            weight="medium"
+          >
+            Technologies used in this project:
+          </Typography>
+          <ul className={styles.technologiesList}>
+            {technologies.map((item) => {
+              return (
+                <Typography
+                  as="li"
+                  className={styles.listItem}
+                  variant="body2"
+                  weight="regular"
+                  style="italic"
+                  key={item}
+                >
+                  {item}
+                </Typography>
+              )
+            })}
+          </ul>
+        </section>
+        <section className={styles.experience}>
+          <Typography
+            className={styles.heading}
+            as="h3"
+            variant="heading3"
+            weight="medium"
+          >
+            Challenges
+          </Typography>
+          <Typography variant="body1" weight="regular">
+            My main goal was to achieve a pixel-perfect implementation that
+            closely matched the original Figma design. One challenge was that
+            the mockup included only two screen sizes, so I had to design and
+            implement the layouts between those breakpoints myself while
+            maintaining visual consistency across different devices.
+          </Typography>
+        </section>
+
         <section className={styles.features}>
           <div className={styles.featuresContainer}>
             <Typography
               className={styles.list}
-              as="h3"
+              as="ul"
               variant="heading3"
               weight="medium"
             >
@@ -263,6 +317,25 @@ export const ProjectPetStore = () => {
             <ImagesCarousel images={sectionPagesDesktopImages} />
           </div>
         </section>
+        <section className={styles.experience}>
+          <Typography
+            className={styles.heading}
+            as="h3"
+            variant="heading3"
+            weight="medium"
+          >
+            Lessons Learned
+          </Typography>
+          <Typography variant="body1" weight="regular">
+            This project improved my understanding of responsive design and
+            strengthened my attention to detail. It also showed me that frontend
+            development often requires making design decisions beyond what is
+            provided in the mockup. Most importantly, I found the process of
+            bringing a design to life highly rewarding, especially when the
+            final result closely matched the original vision.
+          </Typography>
+        </section>
+
         <section className={styles.linkContainer}>
           <GitHubIcon />
           <Link className={styles.link} href="https://github.com/pinakoladda">

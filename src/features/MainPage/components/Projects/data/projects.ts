@@ -19,6 +19,7 @@ export const PROJECTS = [
     description:
       'I worked with a Figma design layout for this project. The project consists of three pages: Main Page, Category Page, and Product Page.',
     technologies: [
+      'TypeScript',
       'Pixel Perfect',
       'Adaptive Design, Semantic Markup',
       'Reusable React Components',

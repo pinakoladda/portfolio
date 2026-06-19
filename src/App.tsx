@@ -3,6 +3,7 @@ import { MainPage } from './features/MainPage'
 import { ProjectPetCare } from './features/ProjectPetCare'
 import { Contacts } from './features/Contacts'
 import { ProjectPetStore } from './features/ProjectPetStore'
+import { ProjectRealEstate } from './features/ProjectRealEstate'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/project-pet-store" element={<ProjectPetStore />} />
+      </Routes>
+      <Routes>
+        <Route path="/project-real-estate" element={<ProjectRealEstate />} />
       </Routes>
       <Routes>
         <Route path="/contacts" element={<Contacts />} />

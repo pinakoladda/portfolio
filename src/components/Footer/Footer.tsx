@@ -7,7 +7,7 @@ import { Link } from '../Link'
 import styles from './index.module.css'
 
 interface FooterProps {
-  page: 'main' | 'pet-care' | 'pet-store'
+  page: 'main' | 'pet-care' | 'pet-store' | 'real-estate'
 }
 
 export const Footer = ({ page }: FooterProps) => {
