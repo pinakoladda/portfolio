@@ -33,6 +33,8 @@ const technologies = [
   'Pixel Perfect',
   'Adaptive Design',
   'Semantic Markup',
+  'Design System',
+  'CSS variables',
   'Interactive Components',
   'React Router',
   'Reusable React Components',
@@ -95,7 +97,7 @@ export const ProjectPetStore = () => {
             variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
-            Technologies used in this project:
+            Technics used in this project:
           </Typography>
           <ul className={styles.technologiesList}>
             {technologies.map((item) => {
@@ -158,7 +160,7 @@ export const ProjectPetStore = () => {
                 variant={isSmallDevice ? 'body4' : 'body1'}
                 weight="regular"
               >
-                Category Page
+                Catalog Page
               </Typography>
               <Typography
                 className={styles.listItem}
@@ -190,7 +192,7 @@ export const ProjectPetStore = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  1. Pixel-Perfect Development.
+                  1. Pixel-Perfect Development
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -198,9 +200,8 @@ export const ProjectPetStore = () => {
                   weight="regular"
                   as="li"
                 >
-                  Pixel-Perfect Implementation - recreated the design with close
-                  visual accuracy, ensuring consistency with the original Figma
-                  mockups.
+                  Recreated the design with close visual accuracy, ensuring
+                  consistency with the original Figma mockups.
                 </Typography>
               </div>
               <div className={styles.featuresContainer}>
@@ -210,7 +211,7 @@ export const ProjectPetStore = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  2. Semantic & Maintainable Code.
+                  2. Semantic & Maintainable Code
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -218,8 +219,8 @@ export const ProjectPetStore = () => {
                   weight="regular"
                   as="li"
                 >
-                  Semantic HTML Structure - utilized semantic HTML elements to
-                  improve code readability, accessibility, and maintainability.
+                  Used semantic HTML elements to improve code readability,
+                  accessibility, and maintainability.
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -227,19 +228,8 @@ export const ProjectPetStore = () => {
                   weight="regular"
                   as="li"
                 >
-                  Component-Based Architecture — built reusable React components
-                  to promote consistency and reduce code duplication across the
-                  application.
-                </Typography>
-                <Typography
-                  className={styles.listItem}
-                  variant={isSmallDevice ? 'body4' : 'body2'}
-                  weight="regular"
-                  as="li"
-                >
-                  Component-Based Architecture — built reusable React components
-                  to promote consistency and reduce code duplication across the
-                  application.
+                  Built reusable React components to promote consistency and
+                  reduce code duplication across the application.
                 </Typography>
               </div>
               {isSmallDevice && (
@@ -258,7 +248,7 @@ export const ProjectPetStore = () => {
                     variant={isSmallDevice ? 'body2' : 'heading4'}
                     weight="medium"
                   >
-                    3. Responsive User Experience.
+                    3. Responsive UX
                   </Typography>
                   <Typography
                     className={styles.listItem}
@@ -266,9 +256,9 @@ export const ProjectPetStore = () => {
                     weight="regular"
                     as="li"
                   >
-                    Responsive & Adaptive Design - implemented media queries to
-                    support multiple screen sizes and provide a seamless
-                    experience across desktop, tablet, and mobile devices.
+                    Implemented media queries to support multiple screen sizes
+                    and provide a seamless experience across desktop, tablet,
+                    and mobile devices.
                   </Typography>
                   <Typography
                     className={styles.listItem}
@@ -276,9 +266,8 @@ export const ProjectPetStore = () => {
                     weight="regular"
                     as="li"
                   >
-                    Flexible Layouts - ensured smooth transitions between design
-                    breakpoints for improved usability on intermediate screen
-                    resolutions.
+                    Ensured smooth transitions between design breakpoints for
+                    improved usability on intermediate screen resolutions.
                   </Typography>
                 </div>
               </div>
@@ -289,7 +278,7 @@ export const ProjectPetStore = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  4. Interactive UI Elements.
+                  4. Interactive UI Elements
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -308,7 +297,7 @@ export const ProjectPetStore = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  5. Navigation.
+                  5. Navigation
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -316,9 +305,9 @@ export const ProjectPetStore = () => {
                   weight="regular"
                   as="li"
                 >
-                  Client-Side Routing - implemented navigation between the Main
-                  Page, Category Page, and Product Page using React Router,
-                  enabling a smooth single-page application experience.
+                  Client-Side Routing - implemented navigation between pages
+                  using React Router, enabling a smooth single-page application
+                  experience.
                 </Typography>
               </div>
             </div>

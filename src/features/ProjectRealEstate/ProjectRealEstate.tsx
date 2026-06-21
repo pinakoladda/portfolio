@@ -60,9 +60,10 @@ export const ProjectRealEstate = () => {
             variant={isSmallDevice ? 'body4' : 'body1'}
             weight="regular"
           >
-            This project was developed based on a Figma design mockup, with a
-            strong focus on accurately translating the design into a fully
-            functional user interface.
+            A responsive real estate landing page built from an AI-generated
+            Figma design. The project showcases pixel-perfect development,
+            semantic HTML, component-based architecture, and adaptive layouts
+            across multiple screen sizes.
           </Typography>
         </section>
         <section className={styles.technologies}>
@@ -75,7 +76,7 @@ export const ProjectRealEstate = () => {
               variant={isSmallDevice ? 'body1' : 'heading3'}
               weight="medium"
             >
-              Technologies used in project:
+              Technics used in project:
             </Typography>
             <ul className={styles.technologiesList}>
               {technologies.map((item) => {
@@ -111,8 +112,7 @@ export const ProjectRealEstate = () => {
           >
             This project was primarily focused on improving my CSS skills and
             practicing pixel-perfect implementation. Since I created the design
-            mockup myself using AI tools before building it in Figma, there were
-            no significant challenges during development.
+            mockup myself using AI tools before building it in Figma.
           </Typography>
         </section>
 
@@ -134,7 +134,7 @@ export const ProjectRealEstate = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  1. Pixel-Perfect Development.
+                  1. Pixel-Perfect Development
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -142,8 +142,8 @@ export const ProjectRealEstate = () => {
                   weight="regular"
                   as="li"
                 >
-                  Pixel-Perfect Implementation - recreated the interface with
-                  close visual accuracy to the original Figma design.
+                  Recreated the interface with close visual accuracy to the
+                  original Figma design.
                 </Typography>
               </div>
               <div className={styles.featuresContainer}>
@@ -153,7 +153,7 @@ export const ProjectRealEstate = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  2. Semantic & Maintainable Code.
+                  2. Semantic & Maintainable Code
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -161,8 +161,8 @@ export const ProjectRealEstate = () => {
                   weight="regular"
                   as="li"
                 >
-                  Semantic HTML Structure - used semantic HTML elements to
-                  improve accessibility, readability, and maintainability.
+                  Used semantic HTML elements to improve accessibility,
+                  readability, and maintainability.
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -181,7 +181,7 @@ export const ProjectRealEstate = () => {
                   variant={isSmallDevice ? 'body2' : 'heading4'}
                   weight="medium"
                 >
-                  3. Responsive User Experience.
+                  3. Responsive UX
                 </Typography>
                 <Typography
                   className={styles.listItem}
@@ -189,7 +189,7 @@ export const ProjectRealEstate = () => {
                   weight="regular"
                   as="li"
                 >
-                  Responsive Design - implemented media queries to ensure a
+                  Responsive Layout - implemented media queries to ensure a
                   seamless experience across different screen sizes and devices.
                 </Typography>
                 <Typography
@@ -205,19 +205,20 @@ export const ProjectRealEstate = () => {
               </div>
             </div>
             <section className={styles.linkContainer}>
-              <GitHubIcon />
               <Link
                 className={styles.link}
                 href="https://github.com/pinakoladda"
+                target="_blank"
               >
+                <GitHubIcon />
                 <Typography
                   variant={isSmallDevice ? 'body4' : 'body1'}
                   weight="regular"
                 >
                   View code on GitHub
                 </Typography>
+                <CursorFilledIcon width="20" height="20" />
               </Link>
-              <CursorFilledIcon width="20" height="20" />
             </section>
           </div>
           <div className={styles.carouselContainer}>

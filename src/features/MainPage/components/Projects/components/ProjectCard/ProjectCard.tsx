@@ -54,7 +54,7 @@ export const ProjectCard = ({
             style="italic"
             className={styles.paragraph}
           >
-            Technologies used in the project:
+            Technics used in the project:
           </Typography>
           <ul className={styles.technologies}>
             {technologies.map((technology) => {

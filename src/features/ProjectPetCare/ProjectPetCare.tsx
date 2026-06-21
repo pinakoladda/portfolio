@@ -34,20 +34,22 @@ import { useMediaQuery } from '@uidotdev/usehooks'
 
 const technologies = [
   'React.js',
-  'JS',
+  'JavaScript',
   'CSS',
-  'HTML',
   'Adaptive Design',
-  'Autorization',
+  'Autorization & Authentication',
   'Rest API',
+  'Multi-page application',
+  'i18n',
 ]
+
 const imagesSectionAuth = [singInImg, registrationImg, signInErrorImg]
 const imagesSectionMainPage = [
   mainPageImg,
-  notificationEventImg,
   editUserInfoImg,
   addPetModalImg,
   addPetModalSuggestImg,
+  notificationEventImg,
 ]
 const imagesSectionPetPage = [
   petPageImg,
@@ -105,7 +107,7 @@ export const ProjectPetCare = () => {
             variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
-            Technologies used in this project:
+            Technics used in this project:
           </Typography>
           <ul className={styles.technologiesList}>
             {technologies.map((item) => {
@@ -140,12 +142,11 @@ export const ProjectPetCare = () => {
           >
             Working on Pet Care introduced me to several new concepts and
             technical challenges. Some of the most interesting tasks included
-            implementing unit conversion preferences (kilograms and pounds),
-            adding multilingual support, and building a notification system with
-            dynamic text generation. One particular challenge was creating
-            user-friendly notification messages by combining backend data with
-            localized text while maintaining clear and natural phrasing across
-            different scenarios.
+            implementing unit conversion preferences (metric and imperial
+            measure systems), adding multilingual support, and building a
+            notification system with dynamic text generation. One particular
+            challenge was creating user-friendly notification messages by using
+            raw data from API.
           </Typography>
         </section>
 
@@ -165,7 +166,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body2' : 'heading4'}
               weight="medium"
             >
-              1. User authentication and authorization.
+              1. User authentication and authorization
               <Typography
                 className={styles.listItem}
                 as="li"
@@ -189,7 +190,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body2' : 'heading4'}
               weight="medium"
             >
-              2. Main Page.
+              2. Main Page
             </Typography>
             <Typography
               className={styles.list}
@@ -197,7 +198,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body4' : 'body1'}
               weight="medium"
             >
-              2.1. Home Dashboard.
+              2.1. Home Dashboard
               <Typography
                 className={styles.listItem}
                 variant={isSmallDevice ? 'body4' : 'body2'}
@@ -300,7 +301,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body2' : 'heading4'}
               weight="medium"
             >
-              3. Pet Profile Page.
+              3. Pet Profile Page
             </Typography>
             <Typography
               className={styles.list}
@@ -334,14 +335,6 @@ export const ProjectPetCare = () => {
               weight="medium"
             >
               3.2. Medical Information
-              <Typography
-                className={styles.listItem}
-                variant={isSmallDevice ? 'body4' : 'body2'}
-                weight="regular"
-                as="li"
-              >
-                Weight Tracking - record and review weight history.
-              </Typography>
               <Typography
                 className={styles.listItem}
                 variant={isSmallDevice ? 'body4' : 'body2'}
@@ -426,7 +419,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body2' : 'heading4'}
               weight="medium"
             >
-              4. Settings Page.
+              4. Settings Page
             </Typography>
             <Typography
               className={styles.list}
@@ -434,7 +427,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body4' : 'body1'}
               weight="medium"
             >
-              4.1. Account Settings.
+              4.1. Account Settings
               <Typography
                 className={styles.listItem}
                 variant={isSmallDevice ? 'body4' : 'body2'}
@@ -451,7 +444,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body4' : 'body1'}
               weight="medium"
             >
-              4.2. Security.
+              4.2. Security
               <Typography
                 className={styles.listItem}
                 variant={isSmallDevice ? 'body4' : 'body2'}
@@ -470,7 +463,7 @@ export const ProjectPetCare = () => {
               variant={isSmallDevice ? 'body4' : 'body1'}
               weight="medium"
             >
-              4.3. Application Preferences.
+              4.3. Application Preferences
               <Typography
                 className={styles.listItem}
                 variant={isSmallDevice ? 'body4' : 'body2'}

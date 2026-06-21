@@ -1,17 +1,10 @@
-import type React from 'react'
 import styles from './index.module.css'
 import cn from 'classnames'
+import type { AnchorHTMLAttributes } from 'react'
 
-interface LinkProps {
-  href: string
-  children: React.ReactNode
-  className?: string
-}
-
-export const Link = ({ href, children, className }: LinkProps) => {
-  return (
-    <a href={href} className={cn(styles.link, className)}>
-      {children}
-    </a>
-  )
+export const Link = ({
+  className,
+  ...props
+}: AnchorHTMLAttributes<HTMLAnchorElement>) => {
+  return <a className={cn(styles.link, className)} {...props} />
 }
