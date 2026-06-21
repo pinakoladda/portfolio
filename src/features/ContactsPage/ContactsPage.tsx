@@ -27,6 +27,7 @@ export const ContactsPage = () => {
         <Link
           className={styles.link}
           href="https://www.linkedin.com/in/nina-koliada-20b714404/"
+          target="_blank"
         >
           <LinkedInIconSquare />
           <Typography
@@ -36,7 +37,11 @@ export const ContactsPage = () => {
             LinkedIn
           </Typography>
         </Link>
-        <Link className={styles.link} href="https://github.com/pinakoladda">
+        <Link
+          className={styles.link}
+          href="https://github.com/pinakoladda"
+          target="_blank"
+        >
           <GitHubIconSquare />
           <Typography
             variant={isSmallDevice ? 'body3' : 'body1'}
@@ -45,7 +50,11 @@ export const ContactsPage = () => {
             GitHub
           </Typography>
         </Link>
-        <Link className={styles.link} href="https://t.me/pinakoladda">
+        <Link
+          className={styles.link}
+          href="https://t.me/pinakoladda"
+          target="_blank"
+        >
           <TelegramIconSquare />
           <Typography
             variant={isSmallDevice ? 'body3' : 'body1'}

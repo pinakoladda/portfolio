@@ -1,8 +1,8 @@
 import { PROJECTS } from './data/projects'
 import { ProjectCard } from './components/ProjectCard'
-import styles from './index.module.css'
 import { Typography } from '../../../../shared/components/Typography'
 import { useMediaQuery } from '@uidotdev/usehooks'
+import styles from './index.module.css'
 
 export const Projects = () => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 620px)')
@@ -26,7 +26,6 @@ export const Projects = () => {
               name={project.name}
               description={project.description}
               img={project.image}
-              technologies={project.technologies}
               path={project.path}
             />
           )

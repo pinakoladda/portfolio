@@ -8,8 +8,17 @@ export const PROJECTS = [
     name: 'Pet-Care',
     image: petCareMain,
     description:
-      'The Pet Care project was conceived primarily to practice and develop my skills. But the idea itself was driven by my personal need for a similar app to monitor information about my dog. 🐶',
-    technologies: ['React.js', 'JS', 'CSS', 'HTML'],
+      'A multi-page pet health management application that allows users to track medical information, treatments, vaccinations, and care routines for their pets.',
+    technologies: [
+      'React.js',
+      'JavaScript',
+      'CSS',
+      'Adaptive Design',
+      'Autorization & Authentication',
+      'Rest API',
+      'Multi-page application',
+      'i18n',
+    ],
     path: '/project-pet-care',
   },
   {
@@ -17,7 +26,7 @@ export const PROJECTS = [
     name: 'Pet-Store',
     image: petStoreMain,
     description:
-      'I worked with a Figma design layout for this project. The project consists of three pages: Main Page, Category Page, and Product Page.',
+      'Multi-page React application built from a Figma design mockup. The project focuses on pixel-perfect implementation and responsive layouts..',
     technologies: [
       'TypeScript',
       'Pixel Perfect',
@@ -33,7 +42,7 @@ export const PROJECTS = [
     name: 'Real Estate Landing',
     image: realEstateMain,
     description:
-      'I worked with a Figma design layout for this project. The project consists of Main Page.',
+      'A responsive landing page built from a custom AI-generated Figma design.',
     technologies: [
       'Pixel Perfect',
       'Adaptive Design',

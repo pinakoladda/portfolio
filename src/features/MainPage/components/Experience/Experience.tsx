@@ -32,7 +32,7 @@ export const Experience = () => {
         >
           An interactive React.js course focused on building a deep
           understanding of React and applying modern development best practices.
-          The curriculum covered React and JavaScript Fundamentals, State
+          Key topics included React and JavaScript Fundamentals, State
           Management, React Hooks, Component API Design, and Next.js. The course
           also included hands-on exercises and independent projects that
           reinforced practical skills and real-world problem-solving.
@@ -78,9 +78,9 @@ export const Experience = () => {
           A comprehensive 10-month web development bootcamp covering HTML, CSS,
           JavaScript, and React. The program included multiple large-scale
           projects and a final graduation project, all reviewed and evaluated by
-          mentors. In addition to technical skills, the course emphasized
-          industry-standard workflows, code reviews, and practical development
-          experience.
+          mentors. In addition to technical skills, the course provided hands-on
+          experience with industry-standard workflows, code reviews, and
+          real-world development practices.
         </Typography>
       </section>
     </section>

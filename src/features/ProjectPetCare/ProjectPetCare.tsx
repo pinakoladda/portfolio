@@ -33,12 +33,12 @@ import { CursorFilledIcon } from '../../shared/images/CursorFilledIcon'
 import { useMediaQuery } from '@uidotdev/usehooks'
 
 const technologies = [
-  'React.js',
+  'React',
   'JavaScript',
   'CSS',
+  'Rest API',
   'Adaptive Design',
   'Autorization & Authentication',
-  'Rest API',
   'Multi-page application',
   'i18n',
 ]
@@ -92,11 +92,11 @@ export const ProjectPetCare = () => {
             improve my front-end development skills. The idea came from a
             real-life need: I wanted a convenient way to store and monitor
             important information about my dog 🐶. <br />
-            The main goal of the project was to create a centralized space for
-            pet owners to manage essential pet information and track changes in
-            their pet’s health over time. My focus was on building a clean,
-            intuitive interface that makes daily use effortless while ensuring
-            quick access to important data.
+            <b> The main goal </b> of the project was to create a centralized
+            space for pet owners to manage essential pet information and track
+            changes in their pet’s health over time. My focus was on building a
+            clean, intuitive interface that makes daily use effortless while
+            ensuring quick access to important data.
           </Typography>
         </section>
 
@@ -412,6 +412,28 @@ export const ProjectPetCare = () => {
             </div>
           </div>
 
+          <section className={styles.experience}>
+            <Typography
+              className={styles.heading}
+              as="h3"
+              variant={isSmallDevice ? 'body1' : 'heading3'}
+              weight="medium"
+            >
+              Challenges
+            </Typography>
+            <Typography
+              variant={isSmallDevice ? 'body4' : 'body1'}
+              weight="regular"
+            >
+              One of the main challenges was integrating the frontend with a
+              backend that managed multiple entities with create, update, and
+              delete functionality. The project also involved extensive work
+              with forms, validation, and error handling, helping me gain
+              practical experience in creating reliable user input flows and
+              maintaining data consistency across the application.
+            </Typography>
+          </section>
+
           <div className={styles.featuresContainer}>
             <Typography
               className={styles.featuresSubheading}
@@ -530,16 +552,20 @@ export const ProjectPetCare = () => {
           </Typography>
         </section>
         <section className={styles.linkContainer}>
-          <GitHubIcon />
-          <Link className={styles.link} href="https://github.com/pinakoladda">
+          <Link
+            className={styles.link}
+            href="https://github.com/pinakoladda/pet-care#"
+            target="_blank"
+          >
+            <GitHubIcon />
             <Typography
               variant={isSmallDevice ? 'body4' : 'body1'}
               weight="regular"
             >
               View code on GitHub
             </Typography>
+            <CursorFilledIcon width="20" height="20" />
           </Link>
-          <CursorFilledIcon width="20" height="20" />
         </section>
       </main>
       <Footer page="pet-care" />

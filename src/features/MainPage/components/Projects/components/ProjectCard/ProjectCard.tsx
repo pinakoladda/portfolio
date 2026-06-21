@@ -8,7 +8,6 @@ interface ProjectCardProps {
   img: string
   name: string
   description: string
-  technologies: string[]
   path: string
 }
 
@@ -17,7 +16,6 @@ export const ProjectCard = ({
   img,
   name,
   description,
-  technologies,
   path,
 }: ProjectCardProps) => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 620px)')
@@ -42,13 +40,13 @@ export const ProjectCard = ({
             </Typography>
           </Link>
           <Typography
-            variant={isSmallDevice ? 'body5' : 'body2'}
+            variant={isSmallDevice ? 'body5' : 'body3'}
             weight="regular"
             className={styles.paragraph}
           >
             {description}
           </Typography>
-          <Typography
+          {/* <Typography
             variant={isSmallDevice ? 'body4' : 'body2'}
             weight="regular"
             style="italic"
@@ -70,7 +68,7 @@ export const ProjectCard = ({
                 </Typography>
               )
             })}
-          </ul>
+          </ul> */}
         </section>
       </div>
       <a href={path} className={styles.btnMore} data-color={id}>

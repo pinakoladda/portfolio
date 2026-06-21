@@ -14,7 +14,7 @@
 
 .technologiesList {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 6px;
   padding: 0;
   align-items: center;
@@ -39,7 +39,6 @@
 
 .listItem {
   list-style: inside;
-  margin-top: 8px;
 }
 
 .list {
@@ -74,9 +73,19 @@
 .linkContainer {
   margin-top: 60px;
   display: flex;
-  justify-content: right;
+  justify-content: end;
+}
+
+.link {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+@media screen and (max-width: 970px) {
+  .technologiesList {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -133,7 +142,7 @@
   }
 
   .technologiesList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2px;
     padding-left: 8px;
   }

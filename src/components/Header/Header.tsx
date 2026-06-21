@@ -20,7 +20,7 @@ export const Header = ({ page }: HeaderProps) => {
     <header className={styles.header}>
       <Typography
         className={styles.title}
-        variant={isSmallDevice ? 'heading4' : 'heading2'}
+        variant={isSmallDevice ? 'body1' : 'heading2'}
         weight="bold"
         data-color={page}
       >

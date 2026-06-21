@@ -74,6 +74,7 @@ export const Footer = ({ page }: FooterProps) => {
         <Link
           className={styles.link}
           href="https://www.linkedin.com/in/nina-koliada-20b714404/"
+          target="_blank"
         >
           {!isSmallDevice && <LinkedInIcon />}
           <Typography
@@ -83,7 +84,11 @@ export const Footer = ({ page }: FooterProps) => {
             LinkedIn
           </Typography>
         </Link>
-        <Link className={styles.link} href="https://github.com/pinakoladda">
+        <Link
+          className={styles.link}
+          href="https://github.com/pinakoladda"
+          target="_blank"
+        >
           {!isSmallDevice && <GitHubIcon />}
           <Typography
             variant={isSmallDevice ? 'body5' : 'body3'}
@@ -92,7 +97,11 @@ export const Footer = ({ page }: FooterProps) => {
             GitHub
           </Typography>
         </Link>
-        <Link className={styles.link} href="https://t.me/pinakoladda">
+        <Link
+          className={styles.link}
+          href="https://t.me/pinakoladda"
+          target="_blank"
+        >
           {!isSmallDevice && <TelegramIcon />}
           <Typography
             variant={isSmallDevice ? 'body5' : 'body3'}

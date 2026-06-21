@@ -61,7 +61,7 @@ export const ProjectRealEstate = () => {
             weight="regular"
           >
             A responsive real estate landing page built from an AI-generated
-            Figma design. The project showcases pixel-perfect development,
+            Figma design. The project focuses on pixel-perfect development,
             semantic HTML, component-based architecture, and adaptive layouts
             across multiple screen sizes.
           </Typography>
@@ -110,9 +110,10 @@ export const ProjectRealEstate = () => {
             variant={isSmallDevice ? 'body4' : 'body1'}
             weight="regular"
           >
-            This project was primarily focused on improving my CSS skills and
-            practicing pixel-perfect implementation. Since I created the design
-            mockup myself using AI tools before building it in Figma.
+            As the design was provided for only a limited number of screen
+            sizes, the main challenge was implementing responsive styles that
+            ensured a seamless user experience and maintained visual consistency
+            across a wide range of devices.
           </Typography>
         </section>
 

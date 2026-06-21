@@ -94,7 +94,6 @@
   .features {
     flex-direction: column-reverse;
     gap: 24px;
-    margin-top: 0;
   }
   .container {
     gap: 24px;
