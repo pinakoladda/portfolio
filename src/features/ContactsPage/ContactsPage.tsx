@@ -1,5 +1,4 @@
 import { Typography } from '../../shared/components/Typography'
-import styles from './index.module.css'
 import { Link } from '../../components/Link'
 import { Header } from '../../components/Header'
 import { LinkedInIconSquare } from '../../shared/images/LinkedInIconSquare'
@@ -8,6 +7,9 @@ import { TelegramIconSquare } from '../../shared/images/TelegramIconSquare'
 import { CursorFilledIcon } from '../../shared/images/CursorFilledIcon'
 import { MailIcon } from '../../shared/images/MailIcon'
 import { useMediaQuery } from '@uidotdev/usehooks'
+import { DownloadIcon } from '../../shared/images/DownloadIcon'
+
+import styles from './index.module.css'
 
 export const ContactsPage = () => {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 620px)')
@@ -26,7 +28,7 @@ export const ContactsPage = () => {
       <section className={styles.contacts}>
         <Link
           className={styles.link}
-          href="https://www.linkedin.com/in/nina-koliada-20b714404/"
+          href="https://www.linkedin.com/in/nina-koliada/"
           target="_blank"
         >
           <LinkedInIconSquare />
@@ -64,16 +66,33 @@ export const ContactsPage = () => {
           </Typography>
         </Link>
       </section>
-      <Link className={styles.email} href="mailto:ninanina1519@gmail.com">
-        <MailIcon />
-        <Typography
-          variant={isSmallDevice ? 'body3' : 'body1'}
-          weight="regular"
+      <section className={styles.emailContainer}>
+        <Link className={styles.email} href="mailto:pinnakoladda@gmail.com">
+          <MailIcon />
+          <Typography
+            variant={isSmallDevice ? 'body3' : 'body1'}
+            weight="regular"
+          >
+            pinnakoladda@gmail.com
+          </Typography>
+          <CursorFilledIcon />
+        </Link>
+      </section>
+      <section className={styles.cvContainer}>
+        <Link
+          className={styles.cv}
+          href="/CV_Junior_Frontend_Developer_Nina_Koliada_Jun2026.pdf"
+          target="_blank"
         >
-          ninanina1519@gmail.com
-        </Typography>
-        <CursorFilledIcon />
-      </Link>
+          <Typography
+            variant={isSmallDevice ? 'body4' : 'body2'}
+            weight="regular"
+          >
+            Download resume
+          </Typography>
+          <DownloadIcon />
+        </Link>
+      </section>
     </main>
   )
 }

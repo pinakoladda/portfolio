@@ -208,7 +208,7 @@ export const ProjectRealEstate = () => {
             <section className={styles.linkContainer}>
               <Link
                 className={styles.link}
-                href="https://github.com/pinakoladda"
+                href="https://github.com/pinakoladda/real-estate-landing"
                 target="_blank"
               >
                 <GitHubIcon />

@@ -38,7 +38,7 @@ const technologies = [
   'CSS',
   'Rest API',
   'Adaptive Design',
-  'Autorization & Authentication',
+  'Authorization & Authentication',
   'Multi-page application',
   'i18n',
 ]

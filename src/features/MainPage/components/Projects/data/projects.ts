@@ -26,7 +26,7 @@ export const PROJECTS = [
     name: 'Pet-Store',
     image: petStoreMain,
     description:
-      'Multi-page React application built from a Figma design mockup. The project focuses on pixel-perfect implementation and responsive layouts..',
+      'Multi-page React application built from a Figma design mockup. The project focuses on pixel-perfect implementation and responsive layouts.',
     technologies: [
       'TypeScript',
       'Pixel Perfect',

@@ -85,19 +85,13 @@ export const ProjectPetStore = () => {
             variant={isSmallDevice ? 'body4' : 'body1'}
             weight="regular"
           >
-            {/* A multi-page React application built from a Figma design, focusing
-            on <b>pixel-perfect</b> implementation and responsive layouts.{' '}
-            <br /> The project includes complex, reusable UI components and
-            sophisticated layouts, such as promotional banners with layered
-            content, images, and responsive positioning. Navigation is
-            implemented using React Router for a seamless user experience. */}
             A multi-page React application built from a Figma design, focusing
             on pixel-perfect implementation and responsive layouts. The project
             features complex, reusable UI components designed to be easily
             maintained and shared across different parts of the application,
-            including content-rich banners and advanced layout compositions
-            combining text, imagery, and interactive elements. Navigation is
-            implemented using React Router for a seamless user experience.
+            including components with advanced layout compositions combining
+            text, images, and interactive elements. Navigation is implemented
+            using React Router for a seamless user experience.
           </Typography>
         </section>
         <section className={styles.technologies}>
@@ -381,6 +375,7 @@ export const ProjectPetStore = () => {
           <Link
             className={styles.link}
             href="https://github.com/pinakoladda/pet-store"
+            target="_blank"
           >
             <GitHubIcon />
             <Typography

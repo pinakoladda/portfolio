@@ -73,7 +73,7 @@ export const Footer = ({ page }: FooterProps) => {
         </Typography>
         <Link
           className={styles.link}
-          href="https://www.linkedin.com/in/nina-koliada-20b714404/"
+          href="https://www.linkedin.com/in/nina-koliada/"
           target="_blank"
         >
           {!isSmallDevice && <LinkedInIcon />}

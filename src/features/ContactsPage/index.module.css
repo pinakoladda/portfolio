@@ -11,11 +11,25 @@
   gap: 8px;
 }
 
+.emailContainer {
+  display: flex;
+}
+
 .email {
   margin-top: 40px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.cv {
+  margin-top: 40px;
+  display: inline-flex;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  align-items: center;
 }
 
 .contacts {

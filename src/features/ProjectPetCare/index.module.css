@@ -146,7 +146,6 @@
   .technologiesList {
     grid-template-columns: 1fr;
     gap: 2px;
-    padding-left: 8px;
   }
 
   .experience {

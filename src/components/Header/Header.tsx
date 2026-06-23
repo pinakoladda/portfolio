@@ -4,13 +4,7 @@ import { Link } from '../Link'
 import styles from './index.module.css'
 
 interface HeaderProps {
-  page:
-    | 'main'
-    | 'pet-care'
-    | 'pet-store'
-    | 'real-estate'
-    | 'contacts'
-    | 'projects'
+  page: 'main' | 'pet-care' | 'pet-store' | 'real-estate' | 'contacts'
 }
 
 export const Header = ({ page }: HeaderProps) => {
@@ -26,7 +20,6 @@ export const Header = ({ page }: HeaderProps) => {
       >
         {page === 'main' && 'Portfolio'}
         {page === 'contacts' && 'Contacts'}
-        {page === 'projects' && 'Projects'}
 
         {page === 'pet-care' && 'Pet-Care'}
         {page === 'pet-store' && 'Pet-Store'}
@@ -77,16 +70,6 @@ export const Header = ({ page }: HeaderProps) => {
               Contacts
             </Typography>
           </Link>
-          {page !== 'projects' && (
-            <Link href="/#Projects">
-              <Typography
-                variant={isSmallDevice ? 'body6' : 'body3'}
-                weight="medium"
-              >
-                Projects
-              </Typography>
-            </Link>
-          )}
         </div>
       )}
     </header>

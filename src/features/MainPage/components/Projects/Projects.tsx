@@ -31,6 +31,30 @@ export const Projects = () => {
           )
         })}
       </div>
+
+      <section className={styles.experience}>
+        <Typography
+          className={styles.heading}
+          as="h3"
+          variant={isSmallDevice ? 'body1' : 'heading3'}
+          weight="medium"
+        >
+          Additional Experience
+        </Typography>
+        <Typography
+          variant={isSmallDevice ? 'body4' : 'body1'}
+          weight="regular"
+        >
+          Throughout my learning journey, I have worked on a wide range of
+          applications, including social networking platforms, movie catalogs,
+          pet adoption services, task management tools, and other projects that
+          helped me strengthen my frontend development skills. <br />I am
+          currently working on WishList, a project inspired by many of the
+          concepts implemented in my other project Pet Care. Its primary goal is
+          to deepen my experience with Next.js while building a fully functional
+          application using modern frontend development practices.
+        </Typography>
+      </section>
     </section>
   )
 }
