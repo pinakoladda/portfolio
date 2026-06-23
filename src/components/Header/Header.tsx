@@ -54,7 +54,7 @@ export const Header = ({ page }: HeaderProps) => {
         </div>
       ) : (
         <div className={styles.linkContainer}>
-          <Link href="/portfolio">
+          <Link href="/portfolio/">
             <Typography
               variant={isSmallDevice ? 'body6' : 'body3'}
               weight="medium"
