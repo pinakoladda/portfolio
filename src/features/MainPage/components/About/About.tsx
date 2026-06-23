@@ -36,7 +36,7 @@ export const About = () => {
           <b>
             {' '}
             React, JavaScript, TypeScript, HTML, CSS, Next.js, Node.js, Git, and
-            MongoDB{' '}
+            MongoDB
           </b>
           .
         </Typography>
