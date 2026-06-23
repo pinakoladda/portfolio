@@ -7,7 +7,7 @@ import { ContactsPage } from './features/ContactsPage'
 
 function App() {
   return (
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contacts" element={<ContactsPage />} />

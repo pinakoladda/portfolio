@@ -19,7 +19,7 @@ export const PROJECTS = [
       'Multi-page application',
       'i18n',
     ],
-    path: '/portfolio/project-pet-care',
+    path: '/project-pet-care',
   },
   {
     id: 'pet_store',
@@ -35,7 +35,7 @@ export const PROJECTS = [
       'Interactive Components',
       'React Router',
     ],
-    path: '/portfolio/project-pet-store',
+    path: '/project-pet-store',
   },
   {
     id: 'real_estate',
@@ -49,6 +49,6 @@ export const PROJECTS = [
       'Semantic Markup',
       'Reusable React Components',
     ],
-    path: '/portfolio/project-real-estate',
+    path: '/project-real-estate',
   },
 ]

@@ -81,7 +81,7 @@ export const ContactsPage = () => {
       <section className={styles.cvContainer}>
         <Link
           className={styles.cv}
-          href="/portfolio/CV_Junior_Frontend_Developer_Nina_Koliada_Jun2026.pdf"
+          href="/CV_Junior_Frontend_Developer_Nina_Koliada_Jun2026.pdf"
           target="_blank"
         >
           <Typography

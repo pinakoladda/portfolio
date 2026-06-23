@@ -22,7 +22,7 @@ export const Footer = ({ page }: FooterProps) => {
         </Typography>
         <Link
           className={styles.link}
-          href={page === 'main' ? '#MainPage' : '/portfolio/'}
+          href={page === 'main' ? '#MainPage' : '/'}
         >
           {!isSmallDevice && <CursorFilledIcon />}
           <Typography
@@ -43,7 +43,7 @@ export const Footer = ({ page }: FooterProps) => {
         </Link>
         <Link
           className={styles.link}
-          href={page === 'main' ? '#Projects' : '/portfolio/'}
+          href={page === 'main' ? '#Projects' : '/'}
         >
           {!isSmallDevice && <CursorFilledIcon />}
           <Typography
