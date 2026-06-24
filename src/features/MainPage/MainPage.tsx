@@ -30,7 +30,7 @@ export const MainPage = () => {
             variant={isSmallDevice ? 'body1' : 'heading3'}
             weight="medium"
           >
-            Junior Frontend Developer
+            Frontend Developer
           </Typography>
           <Typography
             variant={isSmallDevice ? 'body4' : 'body1'}

@@ -25,7 +25,7 @@ export const About = () => {
           variant={isSmallDevice ? 'body4' : 'body1'}
           weight="regular"
         >
-          Hi, I'm Nina, a Junior Frontend Developer currently based in Warsaw.
+          Hi, I'm Nina, Frontend Developer currently based in Warsaw.
         </Typography>
         <Typography
           className={styles.paragraph}
